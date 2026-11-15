@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+  <title>Title</title>
+</head>
+<body>
+<div class="title-wrap">
+<h1 class="title">Player's Move: <span><img
+  data-move-el
+  class="move"
+  src="./assets/cross.svg"
+  alt="">
+  </span></h1>
+</div>
+<div class="game-wrap" style="width: 100%; height: 100svh">
+  <canvas id="canvas" aria-label="game"></canvas>
+</div>
+<dialog
+  id="my-dialog"
+  aria-labelledby="result-title"
+  aria-describedby="result-text"
+>
+  <img data-winner-el alt="">
+
+  <h2 id="result-title" data-result-title>
+    Victory!
+  </h2>
+
+  <p id="result-text" data-result-text>
+    Player wins!
+  </p>
+
+  <button type="button" data-restart>
+    Try Again
+  </button>
+
+  <button
+    type="button"
+    commandfor="my-dialog"
+    command="close"
+  >
+    Close
+  </button>
+</dialog>
+  <script src="script.js"></script>
+</body>
+</html>
